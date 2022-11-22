@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery HTML</title>
+<script src="C:\Users\Saiteja\OneDrive\Desktop\New folder\Web\jQuery\js\jquery-3.6.0.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#sh").attr("href","https://www.w3schools.com/jquery/jquery_dom_set.asp");
+    });
+}); 
+
+</script>
+</head>
+<body>
+<center><h1>jQuery with HTML</h1></center>
+<h3>Get & Set</h3>
+<p id="demo">let's start with the get <b>contents</b> and <b>attributes</b></p>
+<pre id="ff">
+text()-> these sets or returns the text of selected elements
+html()->these sets or returns the contents of selected elements
+val()-> sets or returns the value of the <b>form fields</b>
+for both Get and Set
+</pre>
+<h2  id="aa"><b>Callback </b></h2>
+<p><a href="https://www.google.com" id="sh" target="_blank">asp</a></p>
+<button id="btn">Click it</button>
+<button id="btn1">Do</button>
+<button id="btn2">Me</button>
+<button id="btn3">F_-___</button>
+<button id="btn4">callback_html</button>
+<input type="text" value="Saiteja" id="dd"/>
+
+<!--
+    $(document).ready(function(){
+    $("#btn").click(function(){
+        alert("Text to show : "+$("#demo").text());
+    });
+    $("#btn1").click(function(){
+        alert("HTML elements to show : "+$("#demo").html());
+    });
+});
+
+$(document).ready(function(){
+    $("#btn2").click(function(){
+        alert($("#dd").val());
+    });
+});
+
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        alert($("#sh").attr("href"))
+    });
+});
+
+
+$(document).ready(function(){
+        $("#btn").click(function(){
+            $("#demo").text("Saiteja");
+        });
+        $("#btn1").click(function(){
+            $("#demo").html("<b>SAITEJA</b>");
+        });
+        $("#btn2").click(function(){
+            $("#dd").val("Sai");
+        });    
+    });
+    $(document).ready(function(){
+        $("#btn3").click(function(){
+            $("#aa").text(function(i,originText){
+                return originText+" "+i;
+            });
+        });
+        $("#btn4").click(function(){
+            $("#demo").html(function(i,originText){
+                return originText+" "+i;
+            });
+        });
+    });
+-->
+</body>
+</html>

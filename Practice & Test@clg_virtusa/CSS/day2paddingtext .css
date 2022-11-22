@@ -1,0 +1,262 @@
+.eleout{
+    margin:0px;
+    padding: 40px 10px;
+    border: 1px solid black;
+
+    word-wrap: break-word;
+    
+}
+
+#inner{
+    margin:10px;
+    padding: 40px 10px;
+    border: 10px double green;
+    word-wrap: break-word;
+    width: inherit;
+}
+
+.box{
+    /*
+    outline-style: dotted;
+    outline-width:10px;
+    outline-color:aqua;
+    outline-offset: 10px; */
+    outline: 10px solid tomato;
+    outline-offset: 10px;
+    margin: 10px;
+    border: 5px dashed red;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.para1{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightblue;
+    color: blue;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.para2{
+    
+    direction:rtl;
+    unicode-bidi: bidi-override;
+}
+img.a{
+vertical-align: baseline;
+
+
+}
+
+img.b{
+vertical-align: text-top;
+
+
+}
+
+img.c{
+    vertical-align: text-bottom;
+
+    
+}
+
+img.d{
+    vertical-align: sub;
+    
+}
+
+img.e{
+    vertical-align: super;
+    
+}
+
+p.a{
+    text-decoration-line: overline;
+    text-decoration-color: blueviolet; 
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+}
+p.b{
+    text-decoration: underline;
+    text-decoration-color: blueviolet; 
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+}
+p.c{
+    text-decoration: line-through;
+    text-decoration-color: blueviolet; 
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+}
+p.d{
+    text-decoration: overline underline;
+    text-decoration-color: blueviolet; 
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+}
+p.e{
+    text-decoration: underline red double 3px;
+}
+
+p.t1{
+    text-indent:50px;
+    text-shadow: 10px 10px red;
+    text-transform: uppercase;
+}
+p.t2{
+    word-spacing: 4px;
+    font-size: 5vw;
+    text-transform: lowercase;
+    text-shadow: 0px 0px 10px blue, 0px 0px 10px green;
+}
+p.t3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-varient: small-cap;
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 10px blue;
+}
+p.t4{
+    line-height: 10;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+/*links states
+color
+*/
+
+a.co:link{
+color: red;
+text-decoration:none;
+}
+a.co:visited{
+color: pink;
+}
+a.co:hover{
+color: blue;
+}
+a.co:active{
+color: green;
+}
+
+
+/*text decoration*/
+a.dec:link{
+text-decoration: none;
+}
+a.dec:visited{
+text-decoration:double underline;
+}
+a.dec:hover{
+text-decoration: line-through;
+}
+a.dec:active{
+text-decoration: red dotted overline;  
+}
+
+/*bg color*/
+a.bg:link{
+background-color: aqua;
+}
+a.bg:visited{
+background-color: blue;
+}
+a.bg:hover{
+background-color: blueviolet;
+}
+a.bg:active{
+background-color: yellow;
+}
+
+/*font size*/
+a.si:link{
+font-size: 20px;
+}
+a.si:visited{
+font-size: 40px;
+}
+a.si:hover{
+font-size: 10px;
+}
+a.si:active{
+font-size: 50px;
+}
+
+/*font family*/
+a.fo:link{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a.fo:visited{
+font-family: 'Courier New', Courier, monospace;
+}
+a.fo:hover{
+font-family: 'Times New Roman', Times, serif;
+}
+a.fo:active{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+a.bgg:link, a.bgg:visited{
+    padding: 10px 20px;
+    border: 2px solid green;
+    color:black;
+    text-align: center;
+    background-color: aquamarine;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+a.bgg:hover,a.bgg:active{
+    background-color: brown;
+    color:white;
+    border: 2px solid blue;
+}
+
+.cir{
+list-style-type: circle;
+list-style-type: square;
+
+}
+.sq{
+list-style-position: inside;
+list-style-position: outside;
+}
+.roman{
+list-style-type: upper-roman;
+list-style-type:lower-alpha;
+}
+.alp{
+    list-style: none inside;
+}
+
+/*Tables*/
+/*
+table,th,td{
+    border:1px solid black;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th{
+    background-color: rgb(69, 194, 190);
+    text-align: left;
+    height:100px;
+}
+tr:nth-child(even){
+    background-color: grey;
+    vertical-align: bottom;
+    height:100px;
+}
+tr:hover{
+    background-color: aqua;
+    height:50px;
+}
+*/

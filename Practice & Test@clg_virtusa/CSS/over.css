@@ -1,0 +1,79 @@
+.ov{
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow:auto;    
+    width:100px;
+    height: 60px;
+    border: 2px dotted green;
+}
+
+.r{
+    background-color: red;
+    height:50px;
+    width: 50px;
+    float: left;
+    padding: 5px;
+}
+.g{
+    background-color: green;
+    height:50px;
+    width: 50px;
+    float: left;
+    padding: 5px;
+}
+.b{
+    background-color: blue;
+    height:50px;
+    width: 50px;
+    float: right;
+    padding: 5px;
+}
+.cl{
+    clear: both;
+}
+li{
+    float: left;
+    background-color: aquamarine;
+}
+li a{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center;  
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+}
+li a:hover{
+    background-color:coral;
+}
+.active{
+    background-color: crimson;
+}
+
+.in1{
+display:inline; /*default*/
+background-color: green;
+border: 1px solid red;
+width: 50px;
+height: 30px;
+}
+.in2{
+    display:inline-block;
+background-color: green;
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.in3{
+display:block;
+background-color: green;
+border: 1px solid red;
+width: 100px;
+height: 100px;
+
+}

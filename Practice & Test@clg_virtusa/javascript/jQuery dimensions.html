@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery dimensions</title>
+  <script src="C:\Users\Saiteja\OneDrive\Desktop\New folder\Web\jQuery\js\jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+            var t="";
+            t+="width: "+$("#demo").width()+"<br>";
+            t+="height: " +$("#demo").height()+"<br>";
+            t+="innerWidth: "+$("#demo").innerWidth()+"<br>";
+            t+="innerHeight: "+$("#demo").innerHeight()+"<br>";
+            t+="outerWidth: "+$("#demo").outerWidth()+"<br>";
+            t+="outerHeight: "+$("#demo").outerHeight()+"<br>";
+            t+="outerWidth(true): "+$("#demo").outerWidth(true)+"<br>";
+            t+="outerHeight(true): "+$("#demo").outerHeight(true);
+            $("#demo").html(t);
+        });
+    });
+  </script>
+  <style>
+    #demo{
+        color: red;
+        background-color:aquamarine;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 2px solid black;
+        margin :10px;
+    }
+  </style>
+</head>
+<body>
+<h1>dimension methods</h1>
+
+<p>All meta information goes in the head section...</p>
+<div id="demo"></div>
+<button id="bt1">Click</button>
+<pre>
+    width(); -> element width
+    height(); ->element height
+    innerWidth(); ->ele wid + 2*padding
+    innerHeight(); ->ele H + 2*padding
+    outerWidth(); ->ele Wid + 2*padding + 2*border
+    outerHeight(); ->ele H + 2*padding + 2*border
+    outerWidth(true); ->ele Wid + 2*padding + 2*border + 2*margin
+    outerHeight(true); ->ele H + 2*padding + 2*boder + 2*margin
+</pre>
+</body>
+</html>

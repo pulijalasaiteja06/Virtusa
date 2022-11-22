@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=divice-width, intial-scale=1.0">
+<link rel="stylesheet" href="21-231022CSS.css">
+
+</head>
+<body>
+<div class="header">
+<h1>(21-23d) -10-22</h1>
+</div>
+<div class="menu">
+<ul>
+<li><a class="fir" href="#home">Home</a></li>
+<li><a href="#content">Content</a></li>
+<li class="dropdown">
+<a class="dropbtn" href="#info">Info</a>
+<div class="dropdown-content">
+    <a>aaa</a>
+    <a>aa</a>
+    <a>a</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="cl"></div>
+<p>let's add a dropdown list to a info that is to one of the menu bar</p>
+<h2>Image Gallery</h2>
+<!--
+<div class="responsive">
+<div class="gallery">
+<a target="_blank">
+<img alt="asd" src="anil.png" width="100" height="100">
+<div class="desc">fdsf</div>
+</a>
+</div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+    <a target="_blank">
+    <img alt="asd" src="anil.png" width="100" height="100">
+    <div class="desc">fdsf</div>
+    </a>
+    </div>
+    </div>
+    <div class="responsive">
+    <div class="gallery">
+    <a target="_blank">
+    <img alt="asd" src="anil.png" width="100" height="100">
+    <div class="desc">fdsf</div>
+    </a>
+    </div>
+    </div>
+    <div class="responsive">
+    <div class="gallery">
+    <a target="_blank">
+    <img alt="asd" src="anil.png" width="100" height="100">
+    <div class="desc">fdsf</div>
+    </a>
+    </div>
+    </div>
+    <div class="responsive">
+    <div class="gallery">
+    <a target="_blank">
+    <img alt="asd" src="anil.png" width="100" height="100">
+    <div class="desc">fdsf</div>
+    </a>
+</div>
+</div>
+
+-->
+<div class="cl"></div>
+
+<ul id="navlist">
+<li id="home"><a href="https://google.com"></a></li>
+<li id="prev"><a href="https://google.com"></a></li>
+<li id="next"><a href="https://google.com"></a></li>
+</ul>
+<div class="cl"></div>
+<div>
+<br/>
+<br/>
+
+<h2>Atrribute Selectors</h2>
+<a href="" target="_blank">adas</a><br/>
+<a href="" target="_blank">adas</a><br/>
+<a target="_self">adas</a><br/>
+<a target="_self" title="car wash">word contains</a><br/>
+<a target="_self" title="car-wash">value followed by -</a><br/>
+<a target="_self" title="carwash">value started by</a><br/>
+<a target="_self" title="washcar">value ended by</a><br/>
+<a target="_self" title="jhcarxcv">if value contains in between anywhere</a><br/>
+<a target="_self">adas</a><br/>
+<br/>
+</div>
+<form style="background-color:rgb(141, 184, 188)">
+<label for="search">Search</label><br />
+<input type="text" name="search" id="search" placeholder="search">
+
+</form>
+
+<div >
+<h1>Ass</h1>
+<h2>Ass</h2>
+<h2>Ass</h2>
+<h1>Ass</h1>
+<h2>Ass</h2>
+
+<ol>
+    <li>item</li>
+    <li>item   
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item
+      <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+      </li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+    <li>item</li>
+</ol>  
+<ol>
+    <li>item</li>
+    <li>item</li>
+</ol>
+<h3>specificity</h3>
+<p>to specify the priority if the same property applied in different ways<br/>
+if applied similarly the last one will take priority
+</p>
+<table>
+    <tr>
+        <th>Selectors</th>
+        <th>Specificity Value</th>
+    </tr>
+    <tr>
+        <td>p/h</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>.class</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>#id</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>p.class</td>
+        <td>10+1=11</td>
+    </tr>
+    <tr>
+        <td>p#id</td>
+        <td>100+1=101</td>
+    </tr>
+    <tr>
+        <td>p.class.class</td>
+        <td>1+10+10=21</td>
+    </tr>
+    <tr>
+        <td>#id p#id</td>
+        <td>100+1+100=201</td>
+    </tr>
+    <tr>
+        <td>p internal CSS has higher priority</td>
+        <td>1000</td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>More value highest priority</b></td>
+    </tr>
+</table>
+
+<p style="background-color:aquamarine;">There is another way to high the priority is !importent property</p>
+<p>here the internal CSS has highest pririty, but in css file we assign another property in external CSS to more priority using !important Rule</p>
+</div>
+<div class="ss">
+<p>to test css math functions calc() min() max()</p>
+</div>
+<p class="end">The End Of Basic 25-10-2022</p>
+<p><center><b>off to advanced</b></center></p>
+</body>
+</html>

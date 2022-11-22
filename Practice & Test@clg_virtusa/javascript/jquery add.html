@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<script src="C:\Users\Saiteja\OneDrive\Desktop\New folder\Web\jQuery\js\jquery-3.6.0.js"></script>
+<script>
+    
+</script>
+
+</head>
+<body>
+<h1 id="cc">jQuery add elements/contents</h1>
+<p>poipispfpsfjw</p>
+<pre id="dd">
+add new html elements
+.append(""); -> appended end of the selector element
+.prepend(""); -> prepended front of the selector element
+.after(""); -> added after the selector element
+.before(""); -> added before the selector element
+</pre>
+<ol>
+<li>Let's add it to the </li>
+<li>onOrdered List</li>
+</ol>
+<button id="btn">click</button>
+<button id="btn1">To append</button>
+<button onclick="appendText()">To append list of items</button>
+<button id="btn2">Remove</button>
+<!--
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#cc").append("append sai");
+        });
+        $("#btn1").click(function(){
+            $("ol").append("<li>appended</li>");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("h1").prepend("prepended");
+        });
+        $("#btn1").click(function(){
+            $("ol").prepend("<li>prep</li>");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#dd").after("append sai");
+        });
+        $("#btn1").click(function(){
+            $("#dd").before("<li>appended</li>");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#dd").after("append sai");
+        });
+        $("#btn1").click(function(){
+            $("#dd").before("<li>appended</li>");
+        });
+    });
+
+    function appendText(){
+        var t1="<p>sai</p>";
+        var t2=$("<p></p>").text("SAI");
+        var t3=document.createElement("p");
+        t3.innerHTML="SaItEjA";
+        $("body").append(t1,t2,t3);
+    }
+
+    $(document).ready(function(){
+        $("#btn2").click(function(){
+            $("p").remove();
+            $("#btn1").empty();
+        });
+    });
+
+-->
+</body>
+</html>

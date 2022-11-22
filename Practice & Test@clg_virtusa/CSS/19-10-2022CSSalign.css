@@ -1,0 +1,98 @@
+.al1{
+    color: green;
+    margin:auto;
+    width:200px;
+    border: 2px solid black;
+    background-color:aquamarine;
+    padding: 40px 20px;
+}
+.clearfix{
+    border: 5px solid red;
+    content:"";
+    clear:both;
+    display:table;
+
+}
+img{
+    float: right;
+}
+/*
+/*descedent selector  that is represented by space between selectors
+div p{
+    background-color: yellow;
+}
+/*child selector only selects it's direct childrens, represented by > symbol
+div>p{
+    background-color:aqua;
+}
+/*Adjacent selector selcts an ele that is after the specified ele, represented by + symbol
+div+p{
+    background-color: antiquewhite;
+}
+/*Sibling selector selects all the ele that are next to the sibling of a specified ele and represented by ~ symbol between
+div~p{
+    background-color:cadetblue;
+}
+
+p{
+    display: none;
+}
+div:hover p{
+    display: block;
+}
+
+p:first-child{
+    background-color: brown;
+}
+*/
+p i:first-child{
+    color:blue;
+}
+p:first-child i{
+    color:blue;
+}
+img{
+    opacity: 1.0;
+}
+img:hover{
+    opacity:0.5;
+}
+
+div.background{
+    background: url("anil.png") repeat;
+    border: 2px double black;
+}
+div.transbox{
+    opacity:0.6;
+    margin: 30px;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+div.transbox p{
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background-color:chocolate;
+    height:100%;
+ 
+    
+}
+li{
+    display: inline-block;
+    padding: 10px 20px; 
+}
+li a{
+   text-decoration: none;
+   color: #000000;
+   
+}
+
+@media screen and (max-width:400px){
+    display: block;
+}

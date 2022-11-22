@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content=""width=device-width,intial-scale=1">
+        <title>jQuery Events</title>
+        <script src="C:\\Users\\Saiteja\\OneDrive\\Desktop\\New folder\\Web\\jQuery\\js\\jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("pre").click(function(){
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function(){
+                $("h1").dblclick(function(){
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color","lightyellow"); 
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color","tomato");
+                });
+            });
+            $(document).ready(function(){
+                $("p").on({
+                    mouseenter: function(){
+                        $(this).css("background-color","powderblue");
+                    },
+                    mouseleave: function(){
+                        $(this).css("background-color","dodgerblue");
+                    }
+                });            
+            });
+            
+            
+            
+            
+        </script>
+    </head>
+     <body>
+<center><h1>Syntax</h1>
+<p>Let's start with jQuery events</p>
+</center>
+<!--
+    $(document).ready(function(){
+                $("pre").hover(function(){
+                  alert("Enterd");  
+                },
+                function(){
+                    alert("Exited");
+                });
+            });
+-->
+<pre>
+syntax of jQuery Event:
+-> <strong>$(selector).action();</strong>
+everything in jQuery starts with $ symbol 
+selector-> HTML elements effected by action on it
+action-> Action to be performed
+ends with semi-colon;
+<strong>Basic syntax
+->$(document).ready(function(){
+$("p").click(function(){
+$(this).hide();
+});
+});</strong>
+</pre>
+<hr/>
+<center><h2>Events</h2></center>
+<pre>
+.click();->on click
+.dblclick();->on double click
+.mouseenter();-> on placing mouse pointer on it
+.mouseleave();-> on leaving  ""      ""    "   "
+.mousedown();-> when the left, middle or right mouse button is pressed down,
+while the mouse is over the HTML element
+.mousedown()-> when released
+.hover()->performs both mouseenter ans mouseleave at a time
+.focus(); .blur(); -> to an HTML form field is selector then 
+while entering the field it perfoms the focus action
+after leaving the field it performs blur action
+.on({
+    mouseenter: function(){
+        //perfoms multiple actions.
+    },
+    mouseleave: function(){
+
+    },
+    scjkjc: ss(){--}
+});
+lets go with the example that is in head script section
+</pre>
+<input type="text" name="Firstname"/>
+<input type="text" name="Lastname"/>
+</body>
+</html>

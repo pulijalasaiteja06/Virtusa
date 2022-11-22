@@ -1,0 +1,60 @@
+*{
+    background-color: powderblue;
+    
+}
+body{
+    /*
+    background-image: url(anil.png);
+    */
+    background-position: top right;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    /*short hand
+    background:#ffffff url(k.dglsd) fixed no-repeat riht top;
+    */
+
+}
+#tej{
+    /* this is a comment in css the comment in html is <!-- -->*/
+    color:tomato;
+    text-align:center;
+    background-color: mediumaquamarine;
+    margin: 0px;
+
+
+}
+.sai{
+    background-color: rgb(189, 146, 67);
+    border-style: solid;
+}
+.teja{
+    background-color: rgb(84, 84, 155);
+    border-style: dashed;
+}
+.s1{
+    background-color: rgb(189, 146, 67);
+    border-style: dotted;
+}
+.s2{
+    background-color: rgb(84, 84, 155);
+    border-style: double;
+}
+.s3{
+    background-color: rgb(189, 146, 67);
+    border-style: solid dashed dotted double;
+}
+.s4{
+    background-color: rgb(84, 84, 155);
+    border-style: solid;
+    border-width: 10px 20px 30px 40px;
+
+}
+.s5{
+    background-color: rgb(189, 146, 67);
+    border: 10px solid greenyellow;
+    margin:40px;
+}
+.s6{
+    background-color: rgb(84, 84, 155);
+    margin: 100px 40px 50px 80px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saiteja">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>jQuery Effects</title>
+<script src="C:\Users\Saiteja\OneDrive\Desktop\New folder\Web\jQuery\js\jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#sai").click(function(){
+            $("#tej").slideToggle(6000);
+        });
+        $("#button2").click(function(){
+            $("#tej").stop();
+        });
+    });
+    $(document).ready(function(){
+        $("#button1").click(function(){
+            var div=$("#ff");
+            div.animate({ height:'50px', width:'75px',opacity:'0.5'},"slow");
+            div.animate({left: '300px',widhth: '200px', height:'250px',opacity: '0.1'},"slow");
+            div.animate({hight: 'toggle'});
+            
+        });
+    });
+    $(document).ready(function(){
+        $("#rashi").click(function(){
+           $("#ff").css("background","red").slideUp(2000).slideDown(3000);
+        });
+    });
+
+    $(document).ready(function() {
+        $("#hide").click(function() {
+            $("p").hide(4000);
+
+        });
+        $("#show").click(function(){
+            $("p").show(2000);
+        });
+    });
+
+    $(document).ready(function() {
+        $("#toggle").click(function(){
+            $("p").toggle(3000);
+        });
+    });
+
+    $(document).ready(function() {
+        $("#toggle").click(function(){
+            $("pre").fadeOut();
+        });
+    });
+    $(document).ready(function(){
+        $("#show").dblclick(function(){
+        $("pre").fadeIn();
+        });
+    });
+
+    $(document).ready(function(){
+        $("#toggle").click(function(){
+            $("p").fadeToggle(1111);
+        });
+        $("#show").click(function(){
+            $("h1").fadeTo(1000,0.4);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#sai").click(function(){
+            $("#tej").slideDown("slow");
+        });
+    });
+
+
+    #sai, #tej{
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    border:solid 1px black;
+}
+#tej{
+    padding: 40px;
+    display: none;
+}
+
+$(document).ready(function(){
+        $("#button1").click(function(){
+            $("#ff").animate({left: '250px'},3000);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#button1").click(function(){
+            $("#ff").animate({left: '250px',
+                height: '150px',
+                width: '160px',
+                opacity: '0.3'
+            },3000);
+        });
+    });
+
+    $(document).ready(function(){
+        $("p").click(function(){
+            $("p").hide(500,function(){
+                alert("We have done something after completion of the effect");
+            });
+        });
+    });
+
+
+</script>
+
+<style>
+#sai, #tej{
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    border:solid 1px black;
+}
+#tej{
+    padding: 40px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<h1>Effects</h1>
+<p>Let's begin</p>
+<pre>
+.hide(speed,callback);
+speed-> speed of hiding like"slow" "fast" 1000 milliseconds
+.show(speed,callback);
+callback-> is a function to be executed after show completes
+.toggle(speed,callback);
+toggle for both actions hide&show
+</pre>
+
+<center><b>Fade</b></center>
+<pre>
+.fadeIn(speed,callback);
+fade in a hidden element
+to show hidden
+.fadeOut(speed,callback);
+fade out a shown element
+to hide shown
+.fadeToggle(spedd,callback);
+for both fadeIn,fadeOut
+.fadeTo(speed,opacity,callback);
+fadeTo consists of opacity parameter
+that decides the opacity of selected element
+opacity must be between 0 and 1
+
+</pre>
+<h2>Sliding Effect</h2>
+<pre>
+    Methods
+    slideDown();-> slides down
+    slideUp(); ->slides up
+    slideToggle();-> both
+</pre>
+
+
+
+<div id="sai">to slide down</div>
+<div id="tej">Hello </div>
+
+
+
+<h2>animate method</h2>
+<p>position must be relative, fixed, absolute</p>
+<pre>
+used for animation
+Syntax
+<b>$(selector).animate({params}, speed, callback)</b>
+</pre>
+<div id="ff" style="background: black; width:50px; height:50px; position:absolute;"></div>
+<br>
+
+<br>
+<br>
+<button id="button2">Stop</button>
+<button id="button1">Click</button>
+<button id="rashi">Rashi</button>
+</body>
+</html>

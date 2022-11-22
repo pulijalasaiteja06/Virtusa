@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charSet="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>jQuery manipulating css</title>
+<script src="C:\Users\Saiteja\OneDrive\Desktop\New folder\Web\jQuery\js\jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("h1,p").css({"color":"blue","background-color":"yellow","font-size":"50px"});
+        });
+    });
+
+</script>
+<style>
+    .sai{
+        background-color: dodgerblue;
+        font-size:larger;
+    }
+    .tej{
+        color: blueviolet;
+    }
+</style>
+
+</head>
+<body>
+<h1>jQuery manipulating css</h1>
+<p >.addClass(add as many classes as you want);<br>
+.removeClass();<br>
+.toggleClass(); ->for both adding and removing class
+.css(); t add properties
+</p>
+<button id="btn">btn</button>
+<!--
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("p").addClass("sai");
+        });
+        $("p").click(function(){
+            $("h1").addClass("tej");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("h1,p").toggleClass("sai");
+        });
+    });
+
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("p,h1").css("background-color","yellow");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            alert($("p").css("color"));
+        });
+    });
+-->
+</body>
+</html>

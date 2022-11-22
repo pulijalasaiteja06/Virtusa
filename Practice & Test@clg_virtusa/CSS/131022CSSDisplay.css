@@ -1,0 +1,83 @@
+.dis li{
+    display: inline;
+}
+
+span{
+    display: block;
+}
+#wi{
+    width: 600px;
+    border: 1px solid green;
+}
+/*minmize or maximize to see the difference*/
+#wi1{
+    max-width:600px;
+    border: 1px dotted red;
+}
+.pos1{
+position:static;
+left:40px;
+top: 50px;
+border: 1px dashed violet;
+}
+.pos2{
+position: relative;
+left:40px;
+/*top: 50px;*/
+border: 1px dashed violet;
+height: 100px;
+}
+
+.pos3{
+position:fixed;
+bottom: 0px;
+right: 50px;
+
+background-color: aquamarine;
+}
+.pos4{
+position: absolute;
+left:50px;
+
+}
+.pos5{
+position: sticky;
+left: 0;
+top : 0px;
+}
+#cl{
+    clear:both;
+}
+.container{
+    position: relative; 
+}
+.black-1{
+border: 10px solid black;
+border-radius: 20px;
+position: relative;
+height:100px;
+z-index: 1;
+}
+.red-1{
+
+position: absolute;
+border: 10px solid red;
+height:200px;
+width:400px;
+z-index:3;
+
+}
+.pink-1{
+border: 10px solid pink;
+position: absolute;
+height:150px;
+width:600px;
+z-index:2;
+}
+.yellow-1{
+border: 10px solid yellow;
+position: absolute;
+height:100px;
+width:100px;
+z-index: 4;
+}

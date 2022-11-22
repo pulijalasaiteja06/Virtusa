@@ -1,0 +1,16 @@
+using System;
+enum sai{
+    a,b,c,d
+}
+
+class A{
+    enum days{
+        Mon,Tue,Wed,Thur,Fri,Sat,Sun
+    }
+    public static void Main(string[] args){
+        sai o1=sai.b;
+        Console.WriteLine(o1);
+        int o2=(int) days.Sun;
+        Console.WriteLine(o2);
+    }
+}
