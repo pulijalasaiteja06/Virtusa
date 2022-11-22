@@ -1,9 +1,9 @@
 # Virtusa
 Virtusa Activity tracking
 
-Note:
-
-In javaScript and jQuery most of the code in comments outside of the block
+Note: <br />
+ <br />
+In javaScript and jQuery most of the code in comments outside of the block <br />
 that in the case of using the same classes, elements and id for different activity
 
 ### 1st_Assignment
@@ -19,6 +19,6 @@ Website Which includes html, css, javascript to create an Banking Management Sys
 Hospital Management System for appointment, consultancy, suggestions, location
 
 ### practice and test
-Prctice on C#, html, javascript, java 
-uploaded
-the note above mentioned
+Prctice on C#, html, javascript, java  <br />
+uploaded <br />
+the note above mentioned <br />
