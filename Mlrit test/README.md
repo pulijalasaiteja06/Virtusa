@@ -69,3 +69,9 @@ arr={1,2,3,3,4} <br />
 3 <br />
 
 
+### Substitution Cipher
+<br />
+to substitute a string in a way at places <br />
+abcdefghijklmnopqrstuvwxyz <br />
+zyxwvutsrqponmlkjihgfedcba<br />
+
