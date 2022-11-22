@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function validate(){
+var f=document.myform1.firstname.value;
+var l=document.myform1.lastname.value;
+var email=document.myform1.username.value;
+var p1=document.myform1.password.value;
+var p2=document.myform1.confirm.value;
+var j=false;
+if(f==null || f==""){
+window.alert("First name must be filled");
+return false;
+}
+else if(l==null || l=""){
+window.alert("Last name must be filled");
+return false;
+}
+else if(email.length<11){
+window.alert("Username must be 12 character of length");
+return false;
+}
+else if(p1.length<6 || p2.length<6){
+window.alert("Password must be greater than 6 characters")
+return false;
+}
+else if(p1!=p2){
+window.alert("Password must be same enter below in confirm box also");
+return false;
+}
+else{
+for(let i=0;i<email.length;i++){
+if(email[i]=="@")
+j=true;
+}
+if(!j){
+window.alert("username must contain @ mail account");
+return false;
+}
+else{
+return true;
+}
+}
+
+}
+
+</script>
+
+<form name="myform1" method="post" action="vir2-4.htm" onsubmit="return validate()">
+<center>
+<br><br>
+<h1 style="color:tomato">Budget Trip</h1>
+<h3>Create an account to continue...</h3>
+<lable for="firstname" style="background-color:dodgerblue;">First Name:</lable>
+<input type="text" id="firstname" name="firstname">
+<lable for="lastname" style="background-color:dodgerblue;">Last Name:"</lable>
+<input type="text" id="lastname" name="lastname">
+<br>
+<br>
+<lable for="username" style="color:orange;">Username:</lable>
+<input type="text" id="username" name="username"> 
+<p style="color:lightblue;">it must contain an gmail account</p>
+<lable for="password" >Password</lable>
+<input type="password" id="password" name="password">
+<lable for="confirm">Confirm</lable>
+<input type="password" id="confirm" name="confirm">
+<p>password must be strong<br>(use 0-9&A-z&!+...)</p>
+
+<input type="submit" id="submit" value="Register"><br><br>
+
+</center>
+</form>
+</body>
+</html>

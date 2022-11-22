@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Budget trip</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function validate(){
+var email=document.myform.email.value;
+var j=false;
+if(email==null || email==""){
+window.alert("Email can't be blank");
+return false;
+}
+else if(email.length<11){
+window.alert("email length should be more then 11 characters");
+return false;
+}
+else{
+for(let i = 0; i < email.length; i++) {
+if(email[i]=="@")
+j=true;
+}
+if(!j){
+window.alert("Entered value should be an email");
+return false;
+}
+else{
+return true;
+}
+}
+}
+</script>
+
+<br><br>
+<form name="myform" method="post" action="vir2-2.htm" onsubmit="return validate()">
+
+<center>
+<h1 style="color:tomato">Budget Trip</h1>
+<h3 style="font-family:verdana">Sign in</h3>
+<lable for="Email">Enter mail to continue:</lable><br><br>
+<input type="text" id="Email" name="email">
+<p>forgot email</p>
+<br><br>
+
+<input type="submit" value="Continue"><br><br>
+&nbsp;&nbsp;
+
+<a href="vir2-3.htm" style="color:blue;">Create account</a>
+
+<br><br>
+<select name="languages" id="languages">
+<option value="english">English-india</option>
+<option value="telugu">Telugu</option>
+<option value="hindi">hindi</option>
+</select>
+<p>help</p>
+</center>
+</form>
+</body>
+</html>

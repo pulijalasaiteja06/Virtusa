@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign in</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+function validate(){
+var pass=document.myform.password.value;
+
+if(pass==null || pass==""){
+window.alert("Password can't be blank");
+return false;
+}
+else if(pass.length<6){
+window.alert("Password length should be more then 6 characters");
+return false;
+}
+}
+</script>
+
+<form name="myform" method="post" action="vir2-5.htm" onsubmit="return validate()">
+
+<center>
+<h1 style="color:tomato">Budget Trip</h1>
+<h3 style="font-family:verdana">Sign in</h3>
+<lable for="password">Enter password to continue:</lable><br><br>
+<input type="password" id="password" name="password">
+<p style="color:blue;">forgot password</p>
+<br><br>
+
+<input type="submit" value="Continue"><br><br>
+
+<p>help</p>
+</center>
+</form>
+</body>
+</html>
