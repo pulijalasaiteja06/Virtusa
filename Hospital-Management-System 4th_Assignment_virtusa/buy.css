@@ -1,0 +1,21 @@
+#mid{
+    width:100%;
+    height:100%;
+
+}
+h3{
+    color: rgb(47, 165, 102);
+}
+
+#bar{
+    width:100%;
+    height:100px;
+}
+.bt1{
+    width: 10%;
+    height:100%;
+    float left;
+    background-color: aqua;
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 10px;
+}

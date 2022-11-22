@@ -1,0 +1,19 @@
+#total{
+    min-height: max-content;
+    width: 50%;
+
+}
+#city{
+    width: 100%;
+    height:300px;
+    border: 1px solid black;
+
+}
+
+.ct1{
+    width:16%;
+    height: 100px;
+    position:relative;
+    float:left;
+     
+}
