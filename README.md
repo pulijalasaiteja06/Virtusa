@@ -19,5 +19,6 @@ Website Which includes html, css, javascript to create an Banking Management Sys
 Hospital Management System for appointment, consultancy, suggestions, location
 
 #practice and test
+Prctice on C#, html, javascript, java 
 uploaded
 the note above mentioned
